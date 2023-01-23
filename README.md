@@ -69,6 +69,7 @@ RegisterNumber:22009266
 
 
 
+[ilovepdf_pages-to-jpg (10).zip](https://github.com/Gopika-9266/Exercise-07-Multiplexer-and-De--multiplexer/files/10476547/ilovepdf_pages-to-jpg.10.zip)
 
 
 
