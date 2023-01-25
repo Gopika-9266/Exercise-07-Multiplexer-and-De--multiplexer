@@ -65,7 +65,7 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
 ### PROGRAM:
 
-module MUX(I0,I1,I2,I3,S0,S1,Y);
+/*module MUX(I0,I1,I2,I3,S0,S1,Y);
 input I0,I1,I2,I3,S0,S1;
 output Y;
 wire S0C,S1C;
@@ -116,10 +116,9 @@ RegisterNumber:22009266
 
 ### TRUTH TABLE:
 
-![download](https://user-images.githubusercontent.com/122762773/214649365-50fbbd83-a42e-42cc-948a-2fbca45986a7.png)
+![multiplexer5](https://user-images.githubusercontent.com/122762773/214650924-8da8b1b6-0e35-416b-be2f-d0f66716df2f.png)
 
-![download (1)](https://user-images.githubusercontent.com/122762773/214649400-01367c76-5d56-48cf-bb61-c5bc79cd9750.png)
-
+![download (2)](https://user-images.githubusercontent.com/122762773/214650951-5dd59f33-55d9-4792-b281-27bf89a33f26.png)
 
 
 ### RESULTS:
