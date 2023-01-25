@@ -46,44 +46,81 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
  
  
-### Procedure
-/* write all the steps invloved */
+### Procedure:
+
+
+1.Start the module using module projname()
+
+2.Declare the inputs and outputs along with the select lines according to the multiplexer and demultiplexer.
+
+3.Use wire to assign intermediate outputs.
+
+4.Use and,or and not gates to get the desired output.
+
+5.End the module.
+
+6.Generate RTL realization and timing diagrams.
 
 
 
-### PROGRAM 
-/*
+### PROGRAM:
+
+module MUX(I0,I1,I2,I3,S0,S1,Y);
+input I0,I1,I2,I3,S0,S1;
+output Y;
+wire S0C,S1C;
+not(S0C,S0);
+not(S1C,S1);
+wire P,Q,R,S;
+and(P,S0C,S1C,I0);
+and(Q,S0C,S1,I1);
+and(R,S0,S1C,I2);
+and(S,S0,S1,I3);
+or(Y,P,Q,R,S);
+endmodule
+
+
+
+module DEMUX(Y0,Y1,Y2,Y3,S0,S1,I);
+input S0,S1,I;
+output Y0,Y1,Y2,Y3;
+wire S0C,S1C;
+not(S0C,S0);
+not(S1C,S1);
+and(Y0,I,S0C,S1C);
+and(Y1,I,S0C,S1);
+and(Y2,I,S0,S1C);
+and(Y3,I,S0,S1);
+endmodule
+
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Gopika R
 RegisterNumber:22009266 
-*/
 
 
 
+### RTL LOGIC: 
+
+![Screenshot (60)](https://user-images.githubusercontent.com/122762773/214648924-d398e7de-74c0-4a7d-abae-1160baf87278.png)
+
+![Screenshot (47)](https://user-images.githubusercontent.com/122762773/214648973-5a98629a-3214-4e14-bfaa-8c0b7cc5e70e.png)
+
+
+### TIMING DIGRAMS:  
+
+
+![Screenshot (61)](https://user-images.githubusercontent.com/122762773/214649079-0f2525ab-c406-4421-8c98-be212380de36.png)
+
+![Screenshot (48)](https://user-images.githubusercontent.com/122762773/214649094-481b1ee4-5dc0-4eec-9e35-793b96f5f2b5.png)
+
+
+### TRUTH TABLE:
+
+![download](https://user-images.githubusercontent.com/122762773/214649365-50fbbd83-a42e-42cc-948a-2fbca45986a7.png)
+
+![download (1)](https://user-images.githubusercontent.com/122762773/214649400-01367c76-5d56-48cf-bb61-c5bc79cd9750.png)
 
 
 
-### RTL LOGIC  
-
-
-
-
-
-[ilovepdf_pages-to-jpg (10).zip](https://github.com/Gopika-9266/Exercise-07-Multiplexer-and-De--multiplexer/files/10476547/ilovepdf_pages-to-jpg.10.zip)
-
-
-
-### TIMING DIGRAMS  
-
-
-
-
-
-### TRUTH TABLE 
-
-
-
-
-
-
-### RESULTS 
+### RESULTS:
+      Thus the program to design a 4x1 multiplexer and 1x4 demultiplexer is done successful.  
