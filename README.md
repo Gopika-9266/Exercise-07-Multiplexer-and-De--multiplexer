@@ -65,6 +65,7 @@ If the control input changes to AB = 10, then all the gates are restricted excep
 
 ### PROGRAM:
 
+```
 module MUX(I0,I1,I2,I3,S0,S1,Y);
 input I0,I1,I2,I3,S0,S1;
 output Y;
@@ -78,9 +79,9 @@ and(R,S0,S1C,I2);
 and(S,S0,S1,I3);
 or(Y,P,Q,R,S);
 endmodule
+```
 
-
-
+```
 module DEMUX(Y0,Y1,Y2,Y3,S0,S1,I);
 input S0,S1,I;
 output Y0,Y1,Y2,Y3;
@@ -92,11 +93,14 @@ and(Y1,I,S0C,S1);
 and(Y2,I,S0,S1C);
 and(Y3,I,S0,S1);
 endmodule
+```
+
 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
+```
 Developed by: Gopika R
 RegisterNumber:22009266 
-
+```
 
 
 ### RTL LOGIC: 
